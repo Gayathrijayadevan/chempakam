@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color:rgba(46,46,46,255);
     padding: 10px 20px;
     color: white;
     height: 90px;
@@ -39,13 +39,14 @@ body {
     margin-left: 50px;
 }
 
-.nav-links {
+.nav-link {
     list-style: none;
     display: flex;
     gap: 20px;
+    /* background-color: aliceblue; */
 }
 
-.nav-links a {
+.nav-link a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -53,23 +54,23 @@ body {
     transition: background-color 0.3s;
 }
 
-.nav-links a:hover {
-    background-color: #555;
+.nav-link a:hover {
+    color:rgb(231, 41, 149);
+    background-color: rgb(231, 41, 149);
 }
 
-/* Search Box */
 .search_box {
     display: flex;
     align-items: center;
     gap: 5px;
-    background-color: rgb(84, 84, 84);
+    background-color: rgba(46,46,46,255);
     padding: 5px;
     border-radius: 5px;
     border: 1px solid rgb(204, 204, 204);
 }
 
 .search_box input {
-    background-color: rgb(84, 84, 84);
+    background-color: rgba(46,46,46,255);
     padding: 7px 15px;
     border: none;
     font-size: 14px;
@@ -89,7 +90,7 @@ body {
 }
 
 .search_box button:hover {
-    background-color: #555;
+    background-color:rgb(231, 41, 149);
 }
 
 /* Navbar Icons */
@@ -97,12 +98,20 @@ body {
     color: white;
     text-decoration: none;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 20px;
+    /* background-color: #f0c93b; */
+    height: 100px;
+}
+.nav_icons img{
+    height: 30px;
+}
+.linkedin img{
+    height: 40px;
+}
+.nav_icons a:hover {
+    color:rgb(231, 41, 149);
 }
 
-.nav_icons a:hover {
-    color: #ffcc00;
-}
 
 /* Hero Section Styling */
 .hero {
@@ -373,4 +382,133 @@ body {
   }
   #contact{
     height: 100px;
+  }
+
+  /*----------------------------------------------------------------------------------------------------------------*/
+  .our-story {
+    position: relative; 
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 30px;
+    overflow: hidden; 
+}
+
+.our-story::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    z-index: -1; 
+    border-radius: 10px;
+    background: linear-gradient(to right, #000, transparent 60%);
+}
+
+.our-story::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 85%);
+    z-index: -1; 
+}
+
+.our-story-text {
+    position: relative; 
+    z-index: 2; 
+    padding: 20px;
+    max-width: 600px;
+}
+
+.our-story-image {
+    position: relative; 
+    z-index: 1; 
+}
+
+.our-story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+/*---------------------------------------------------*/
+/* Styling for the text container */
+.container {
+    max-width: 1200px; 
+}
+
+p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+    margin-bottom: 20px; 
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+    }
+}
+/*----------------------------------------*/
+.feature {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin-top: 110px;
+    height: 500px;
+  }
+  
+  .feature i {
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .feature h3 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .feature p {
+    margin-top: 10px;
+    color: #666;
+  }
+  .chose{
+    background-color: beige;
+    height: 700px;
+  }
+   .chose h1{
+    font-weight: bolder;
+    margin-left: 400px;
+    /* background-color: aqua; */
+  }
+  /*-------------------------------------------*/
+  .rating{
+    margin-top: 50px; 
+    height: 300px;
+  }
+  
+  .col-md-3 {
+    padding: 20px;
+  }
+  
+   .section h3 {
+    font-size: 50px;
+    color: rgb(151, 147, 147);
+  }
+  
+  .section p {
+    margin-top: 10px;
+    color:rgb(151, 147, 147);
+  }
+  
+  hr {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .section{
+    margin-top: 50px;
   }
