@@ -43,7 +43,12 @@ body {
     gap: 20px;
     /* background-color: aliceblue; */
 }
-
+.dropdown button{
+  background-color: rgba(46,46,46,255);
+  border: none;
+  color:rgb(151, 149, 149);
+  font-weight: 540;
+}
 .nav-link a {
     text-decoration: none;
     color: white;
@@ -109,7 +114,42 @@ body {
 .nav_icons a:hover {
     color:rgb(231, 41, 149);
 }
-
+/*-------------------------------------------------------*/
+/* container2 */
+.container2 {
+  position: relative;
+  background-color: #190602; 
+  width: 100%;
+  height: 60vh;
+}
+.c2div{
+  position: absolute;
+  top: 15vh;
+  left:20vw;
+  z-index:0;
+  width: 30vw;
+  color: aliceblue;
+}
+.c2div h1{
+  font-size: 60px;
+}
+.container2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 90%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #150503, rgba(60,20,10,1)); 
+}
+.container2 img {
+  width: 50vw;
+  height: 100%;
+  position: relative;
+  z-index: 0; 
+  margin-left: 900px;
+}
+/*---------------------------------*/
 /*footer*/
 .footer {
     background-color: #161616;
