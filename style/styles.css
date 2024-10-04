@@ -5,6 +5,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color:white;
+    overflow-x: hidden;
 }
 
 .promo_bar {
@@ -51,6 +52,13 @@ body {
     color:rgb(151, 149, 149);
     font-weight: 550;
 }
+.dropdown-menu{
+    background-color: rgba(46,46,46,255);
+}
+.dropdown-item{
+    color:rgb(151, 149, 149);
+}
+
 .nav-link a {
     text-decoration: none;
     color: white;
@@ -393,12 +401,12 @@ body {
   }
 
   /*----------------------------------------------------------------------------------------------------------------*/
- /* Original CSS */
 .container2 {
     position: relative;
     background-color: #190602; 
     width: 100%;
     height: 60vh;
+    overflow-x: hidden;
 }
 .c2div {
     position: absolute;
